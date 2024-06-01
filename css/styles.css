@@ -1,0 +1,475 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: myFont;
+    src:url("../font/good.otf");
+}
+
+/* Hide the scrollbar for WebKit browsers (Chrome, Safari, etc.) */
+body::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+    background-color: black; /* Set the background color of the scrollbar */
+}
+
+/* Style the scrollbar thumb (the draggable handle) */
+body::-webkit-scrollbar-thumb {
+    background-color: #dd0100; /* Set the color of the scrollbar thumb */
+    border-radius: 10px; /* Set the border radius to round the thumb */
+}
+h1 {
+    font-family: myFont;
+    font-size: 35px;
+    color: #dd0100;
+    font-style: normal;
+}
+p {
+    font-family: myFont;
+    font-size: 13px;
+    color: #dd0100;
+    font-style: normal;
+    margin-top: -20px;
+}
+.vertical-line {
+    border-left: solid; /* Change color and thickness as needed */
+    height: 70px; /* Adjust the height of the line */
+    margin-left: 300px;
+    margin-top: -80px;
+    position: absolute;
+    border-left-color: #dd0100;
+    border-left-width: 5px;
+    border-radius: 50%;
+}
+.logo {
+    position: absolute;
+    margin-top: -30px; /* Adjust the vertical position of the logo */
+    margin-left: 60px;
+    left: 260px; /* Adjust the horizontal position of the logo */
+    width: 140px;
+    height: 120px;
+}
+.navigation {
+    position: absolute;
+    top: 32px; /* Adjust the vertical position of the navigation */
+    left: 460px; /* Adjust the horizontal position of the navigation */
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li {
+    display: inline;
+    margin-right: 30px
+}
+
+.navigation ul li a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #dd0100; /* Adjust the color of the navigation links */
+    font-family: myFont; /* Adjust the font family */
+    font-size: 25px; /* Adjust the font size */
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+    border-radius: 30px;
+}
+
+.navigation ul li a:hover {
+    background-color: #dd0100; /* Adjust the background color on hover */
+    color: white; /* Adjust the color on hover */
+    border-radius: 50px;
+}
+.contact-info {
+    position: absolute;
+    top: 10px; /* Adjust the vertical position */
+    right: 20px; /* Adjust the horizontal position */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-bottom: -23px; /* Adjust space between items */
+}
+
+.contact-item img {
+    width: 45px; /* Adjust the size of the logo */
+    height: auto;
+    margin-right: 1px; /* Adjust space between logo and text */
+}
+
+.contact-item p {
+    margin: 0;
+    color: #dd0100; /* Adjust text color */
+    font-family: myFont; /* Adjust font family */
+    font-size: 16px; /* Adjust font size */
+}
+.centered-image {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 900px;
+    width: 850px;
+}
+.centered2-image {
+    position: absolute;
+    top: 61%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    height: 570px;
+    width: 400px;
+	text-shadow: 0 0 15px rgba(221, 1, 0, 0.7);
+}
+.centered2-image:hover {
+    opacity: 0.4; /* Reduce opacity on hover */
+}
+.centered-image1 {
+    position: absolute;
+    top: 54%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    height: 680px;
+    width: 500px;
+}
+.centered-image1:hover {
+    opacity: 0.4; /* Reduce opacity on hover */
+}
+.content-left {
+    font-family: myFont;
+    position: absolute;
+    top: 100%; /* Adjust the vertical position of the container */
+    left: 5%; /* Adjust the horizontal position of the container */
+    transform: translateY(-50%);
+    color: white; /* Adjust text color */
+    transition: opacity 0.3s ease-in; /* Add transition for opacity */
+}
+.centered-image:hover {
+    opacity: 0.4; /* Reduce opacity on hover */
+}
+
+.content-left h2 {
+    font-size: 35px; /* Adjust font size */
+    margin-bottom: 1px;
+    text-shadow: 0 0 15px rgba(221, 1, 0, 0.7); 
+}
+
+.content-left p {
+    font-size: 16px; /* Adjust font size */
+    margin-top: 5px;
+}
+.behind-image {
+    font-family: myFont;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Set a lower z-index to position behind the image */
+    white-space: nowrap;
+    letter-spacing: 5px;
+}
+
+.behind-image h1 {
+    color: white;
+    font-size: 100px;
+    text-shadow: 0 0 15px rgba(221, 1, 0, 0.7); /* Adjust the shadow color and size */
+    /* Add any other styles as needed */
+}
+.social-icons {
+    display: flex;
+    justify-content: flex-end; /* Align icons and text to the right */
+    align-items: center; /* Center vertically */
+    margin-top: 375px; /* Adjust top margin as needed */
+    margin-right: 100px; /* Move icons and text to the left */
+}
+
+.social-icons a {
+    display: flex;
+    flex-direction: column; /* Arrange icon and text vertically */
+    align-items: center; /* Center horizontally */
+    margin: 0 15px; /* Adjust spacing between icons */
+    text-decoration: none; /* Remove underline */
+    color: #dd0100; /* Set text color */
+    text-shadow: 0 0 15px rgba(221, 1, 0, 0.7);
+}
+
+.social-icons img {
+    width: 70px; /* Adjust icon size */
+    height: auto;
+    filter: drop-shadow(0px 0px 10px #dd0100); /* Add glow effect */
+}
+
+/* Adjust margin for individual icons */
+.facebook-container {
+    margin-bottom: -25px; /* Adjust top margin for Facebook container */
+    margin-right: 6px;
+    margin-top: 0;
+}
+
+.instagram-container {
+    margin-bottom: 0; /* Adjust top margin for Instagram container */
+    margin-right: -300px;
+    margin-top: -120px;
+}
+
+.youtube-container {
+    margin-bottom: 0; /* Remove bottom margin */
+    margin-right: 100px; /* Adjust right margin as needed */
+    margin-top: -250px; /* Adjust top margin for YouTube container */
+}
+
+/* Adjust styles for the text */
+.youtube-container span {
+    margin-top: -15px; /* Adjust spacing between icon and text */
+}
+
+/* Adjust styles for the text */
+.social-icons span {
+    margin-top: -15px; /* Adjust spacing between icon and text */
+    font-family: myFont; /* Set font family */
+    font-size: 20px; /* Set font size */
+}
+.left-image {
+    position: absolute;
+    top: 50%;
+    left: 10%; /* Adjust the left position as needed */
+    margin-left: -70px;
+    transform: translateY(-50%);
+    z-index: 1; /* Ensure it's positioned above the background */
+    box-shadow: 0px 160px 50px 10px rgba(221, 1, 0, 0.7); /* Red glow effect */
+}
+
+.left-image img {
+    width: 320px; /* Adjust the width of the left image */
+    height: 220px;
+    margin-bottom: -200px;
+    filter: grayscale(80%); /* Convert the image to grayscale */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    padding: 10px; /* Add padding to the image */
+}
+.early-life {
+    position: absolute;
+    top: 18%;
+    left: 36.5%;
+	color: white;
+    transform: translate(0, -50%);
+    font-size: 50px;
+	text-shadow: 0 0 15px rgba(221, 1, 0, 0.7);
+    /* Add more styling properties as needed */
+}
+.early-life-paragraph {
+	position: absolute;
+    font-family: myFont;
+    color: #dd0100; /* Adjust text color */
+    font-size: 16px; /* Adjust font size */
+    text-shadow: 0 0 15px rgba(221, 1, 0, 0.7); /* Add text shadow */
+    margin-top: 120px; /* Adjust top margin as needed */
+    margin-left: 10px; /* Adjust left margin as needed */
+    margin-right: 20px; /* Adjust right margin as needed */
+}
+.career {
+    position: absolute;
+    top: 45%;
+    left: 39%;
+	color: white;
+    transform: translate(0, -50%);
+    font-size: 50px;
+	text-shadow: 0 0 15px rgba(221, 1, 0, 0.7);
+    /* Add more styling properties as needed */
+}
+.career-paragraph {
+	position: absolute;
+    font-family: myFont;
+    color: #dd0100; /* Adjust text color */
+    font-size: 16px; /* Adjust font size */
+    text-shadow: 0 0 15px rgba(221, 1, 0, 0.7); /* Add text shadow */
+    margin-top: 330px; /* Adjust top margin as needed */
+    margin-left: 10px; /* Adjust left margin as needed */
+    margin-right: 20px; /* Adjust right margin as needed */
+}
+video {
+    width: 390px; /* Set the width of the video player */
+    height: 240px; /* Let the height adjust automatically to maintain aspect ratio */
+    position: absolute; /* Set position to absolute */
+    top: 40%; /* Move the video 50% from the top */
+    left: 20%; /* Move the video 50% from the left */
+    transform: translate(-50%, -50%); /* Center the video horizontally and vertically */
+    border: 0px solid rgba(221, 1, 0, 0.7); /* Add a border for visual clarity */
+}
+.second-video {
+    position: absolute;
+    top: 40%; /* Adjust the vertical position */
+    left: 80%; /* Adjust the horizontal position */
+    transform: translate(-50%, -50%); /* Center the video */
+    width: 390px; /* Set the width of the video */
+    height: 240px; /* Set the height of the video */
+	border: 0px solid rgba(221, 1, 0, 0.7); /* Add a border for visual clarity */
+}
+.below-video1 {
+	position: absolute;
+	font-size: 15px;
+	top: 57%;
+	left: 7.5%;
+	color: white;
+	text-shadow: 0 0 15px rgba(221, 1, 0, 0.7);
+}
+.paragraph-video1 {
+    font-family: myFont;
+	position: absolute;
+    color: #dd0100; /* Adjust text color */
+    font-size: 14px;
+    text-shadow: 0 0 15px rgba(221, 1, 0, 0.7); /* Add text shadow */
+    top: 65%;
+    left: 7.5%;
+    width: 350px;
+    word-wrap: break-word; /* Wrap text to a new line if it exceeds the container width */
+}
+.below-video2 {
+	position: absolute;
+	font-size: 15px;
+	top: 57%;
+	left: 73.5%;
+	color: white;
+	text-shadow: 0 0 15px rgba(221, 1, 0, 0.7);
+}
+.paragraph-video2 {
+    font-family: myFont;
+	position: absolute;
+    color: #dd0100; /* Adjust text color */
+    font-size: 14px;
+    text-shadow: 0 0 15px rgba(221, 1, 0, 0.7); /* Add text shadow */
+    top: 65%;
+    left: 67.5%;
+    width: 350px;
+    word-wrap: break-word; /* Wrap text to a new line if it exceeds the container width */
+}
+.contact-form {
+    position: absolute;
+    top: 55%; /* Adjust the vertical position */
+    left: 50%; /* Adjust the horizontal position */
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Set background color with transparency */
+    padding: 20px; /* Add padding to the form */
+    border-radius: 10px; /* Add border radius */
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    font-family: myFont;
+    font-size: 20px;
+    color: #dd0100; /* Adjust text color */
+    margin-bottom: 10px; /* Add margin between labels and input fields */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 300px; /* Set the width of input fields */
+    padding: 5px; /* Add padding to input fields */
+    margin-bottom: 15px; /* Add margin between input fields */
+    border: 1px solid #dd0100; /* Add border */
+    border-radius: 5px; /* Add border radius */
+}
+
+.contact-form textarea {
+    height: 100px; /* Adjust the height of textarea */
+    resize: none; /* Disable resizing */
+}
+
+.contact-form input[type="submit"] {
+    width: 150px; /* Set the width of the submit button */
+    height: 40px; /* Adjust the height of the submit button */
+    background-color: #dd0100; /* Set background color of submit button */
+    color: white; /* Set text color of submit button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Add pointer cursor on hover */
+    transition: background-color 0.3s; /* Add transition effect */
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #ff3b3b; /* Change background color on hover */
+}
+.about-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%; /* Adjust width as needed */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about-section h2 {
+    font-family: myFont;
+    font-size: 30px;
+    color: #dd0100;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-family: myFont;
+    font-size: 16px;
+    color: #dd0100;
+    margin-bottom: 15px;
+}
+.footer {
+    position: fixed;
+    bottom: -150px; /* Initially hide the footer off-screen */
+    left: 0;
+    width: 100%;
+    background-image: url('../images/footer1.2.jpg');
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: center;
+    color: #dd0100;
+    padding: -10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3px solid rgba(221, 1, 0, 0.7);
+    transition: bottom 0.5s ease; /* Add smooth transition */
+}
+
+.footer:hover {
+    bottom: 0; /* Show footer on hover */
+}
+.footer-menu {
+    flex: 1; /* Equal width for footer menus */
+    text-align: center; /* Center align menu items */
+}
+.footer h3 {
+    font-family: myFont;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px; /* Add some space below the heading */
+    text-shadow: 0 0 15px rgba(221, 1, 0, 0.7); /* Adjust the shadow color and size */
+}
+.footer ul {
+    font-family: myFont;
+    font-size: 14px;
+    list-style-type: none;
+    padding: 0px;
+}
+.footer ul li {
+    margin-bottom: 5px; /* Add space between list items */
+}
+
+.footer a {
+    color: #dd0100; /* Red text color for links */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s; /* Add transition effect */
+}
+.footer a:hover {
+    background-color: #dd0100; /* Adjust the background color on hover */
+    color: white; /* Adjust the color on hover */
+    border-radius: 50px; /* Add border radius on hover */
+}
